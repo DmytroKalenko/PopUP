@@ -70,7 +70,25 @@ fetch("/PopUP/js/xbox.json")
             amount96GB = MYArray.sizes.items.V.amount;
 
         Warehouse = document.querySelector('.Warehouse');
+//add__event_:_if__click_on_radio__button__COunt_value_equals 0
+FirstBtnBasket.addEventListener('click', function (e) {
+    Warehouse.classList.remove('outStock');
+    Warehouse.textContent = 'Product dostępny';
+    document.querySelector(".counter .value").textContent = 0;
 
+});
+SecondBtnBasket.addEventListener('click', function (e) {
+    Warehouse.classList.remove('outStock');
+    Warehouse.textContent = 'Product dostępny';
+    document.querySelector(".counter .value").textContent = 0;
+
+});
+ThirdBtnBasket.addEventListener('click', function (e) {
+    Warehouse.classList.remove('outStock');
+    Warehouse.textContent = 'Product dostępny';
+    document.querySelector(".counter .value").textContent = 0;
+
+});
         //add events to buttons counter
         var ButtonPLUS = document.querySelector(".counter .plus"),
             ButtonMinus = document.querySelector(".counter .minus");
